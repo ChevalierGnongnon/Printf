@@ -9,8 +9,9 @@ SRCS = ft_char.c \
 	ft_string.c \
 	ft_unsigned.c \
 	ft_getsize.c \
+	main.c \
 	ft_strlen.c
-	
+
 OBJS = $(SRCS:.c=.o)
 
 NAME = libftprintf.a
@@ -21,7 +22,7 @@ CC = gcc
 
 MAIN = main.c
 
-OUT = a.out
+OUT = ./a.out
 
 CFLAGS = -Werror -Wextra -Wall
 

@@ -6,7 +6,7 @@
 /*   By: chhoflac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/08 13:31:01 by chhoflac          #+#    #+#             */
-/*   Updated: 2023/12/09 10:30:58 by chhoflac         ###   ########.fr       */
+/*   Updated: 2023/12/09 13:30:48 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ void	ft_putchar_fd(char c, int fd);
 int		ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *s, int fd);
 int		ft_string(char *s);
-int		ft_unsigned(void);
+int		ft_unsigned(int n);
 int		ft_strlen(char *s);
 int		ft_getsize(int n);
 

@@ -6,11 +6,15 @@
 /*   By: chhoflac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/08 14:16:51 by chhoflac          #+#    #+#             */
-/*   Updated: 2023/12/09 10:32:14 by chhoflac         ###   ########.fr       */
+/*   Updated: 2023/12/09 13:30:29 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
+#include "ft_char.c"
+#include "ft_string.c"
+#include "ft_decimal.c"
+#include "ft_unsigned.c"
 
 int	ft_get_format(const char *s, size_t i, va_list args)
 {
@@ -25,12 +29,12 @@ int	ft_get_format(const char *s, size_t i, va_list args)
 		length += ft_pointer(va_arg(args, void *));*/
 	else if (s[i] == 'd' || s[i] == 'i')
 		length += ft_decimal(va_arg(args, int));
-	/*else if (s[i] == 'u')
-		length += ft_unsigned(va_arg(args, unsigned int));
-	else if (s[i] == 'x')
+	else if (s[i] == 'u')
+		length += ft_unsigned(va_arg(args, int));
+	/*else if (s[i] == 'x')
 		length += ft_hexa_low(va_arg(args, unsigned int));*/
-	else if (s[i] == 'X')
-		length += ft_hexa_up(va_arg(args, unsigned int));
+	/*else if (s[i] == 'X')
+		length += ft_hexa_up(va_arg(args, unsigned int));*/
 	else if (s[i] == '%')
 	{
 		length++;
