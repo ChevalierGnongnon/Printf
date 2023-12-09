@@ -6,7 +6,7 @@
 /*   By: chhoflac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/08 13:31:01 by chhoflac          #+#    #+#             */
-/*   Updated: 2023/12/08 17:00:38 by chhoflac         ###   ########.fr       */
+/*   Updated: 2023/12/09 10:30:58 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,17 +18,18 @@
 # include <unistd.h>
 # include <stddef.h>
 
-int	ft_printf(const char *s, ...);
-int	ft_char(char c);
-int	ft_decimal();
-int	ft_hexa_up(unsigned int n);
-int	ft_hexa_low(unsigned int n);
-int	ft_pointer();
+int		ft_printf(const char *s, ...);
+int		ft_char(char c);
+int		ft_decimal(int n);
+int		ft_hexa_up(unsigned int n);
+int		ft_hexa_low(unsigned int n);
+int		ft_pointer(void);
 void	ft_putchar_fd(char c, int fd);
-int	ft_putnbr_fd(int n, int fd);
+int		ft_putnbr_fd(int n, int fd);
 void	ft_putstr_fd(char *s, int fd);
-int	ft_string();
-int	ft_unsigned();
-int	ft_strlen(char *s);
+int		ft_string(char *s);
+int		ft_unsigned(void);
+int		ft_strlen(char *s);
+int		ft_getsize(int n);
 
 #endif

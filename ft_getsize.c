@@ -1,21 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_decimal.c                                       :+:      :+:    :+:   */
+/*   ft_getsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: chhoflac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/12/09 10:20:32 by chhoflac          #+#    #+#             */
-/*   Updated: 2023/12/09 10:31:18 by chhoflac         ###   ########.fr       */
+/*   Created: 2023/12/09 10:24:07 by chhoflac          #+#    #+#             */
+/*   Updated: 2023/12/09 10:29:12 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int	ft_decimal(int n)
+int	ft_getsize(int n)
 {
-	ft_putnbr_fd(n, 1);
-	if (n == 0)
-		return (1);
-	return (ft_getsize(n));
+	int	i;
+
+	i = 0;
+	while (n != 0)
+	{
+		n /= 10;
+		i++;
+	}
+	return (i);
 }

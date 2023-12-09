@@ -8,6 +8,7 @@ SRCS = ft_char.c \
 	ft_putstr_fd.c \
 	ft_string.c \
 	ft_unsigned.c \
+	ft_getsize.c \
 	ft_strlen.c
 	
 OBJS = $(SRCS:.c=.o)

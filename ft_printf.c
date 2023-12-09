@@ -6,7 +6,7 @@
 /*   By: chhoflac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/08 14:16:51 by chhoflac          #+#    #+#             */
-/*   Updated: 2023/12/08 17:14:49 by chhoflac         ###   ########.fr       */
+/*   Updated: 2023/12/09 10:32:14 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,17 +15,17 @@
 int	ft_get_format(const char *s, size_t i, va_list args)
 {
 	int	length;
-	
+
 	length = 0;
 	if (s[i] == 'c')
 		length += ft_char(va_arg(args, int));
 	else if (s[i] == 's')
 		length += ft_string(va_arg(args, char *));
 /*	else if (s[i] == 'p')
-		length += ft_pointer(va_arg(args, void *));
+		length += ft_pointer(va_arg(args, void *));*/
 	else if (s[i] == 'd' || s[i] == 'i')
 		length += ft_decimal(va_arg(args, int));
-	else if (s[i] == 'u')
+	/*else if (s[i] == 'u')
 		length += ft_unsigned(va_arg(args, unsigned int));
 	else if (s[i] == 'x')
 		length += ft_hexa_low(va_arg(args, unsigned int));*/
