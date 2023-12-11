@@ -6,7 +6,7 @@
 /*   By: chhoflac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/08 14:16:51 by chhoflac          #+#    #+#             */
-/*   Updated: 2023/12/11 09:37:39 by chhoflac         ###   ########.fr       */
+/*   Updated: 2023/12/11 14:55:11 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,6 +15,7 @@
 #include "ft_string.c"
 #include "ft_decimal.c"
 #include "ft_unsigned.c"
+#include "ft_hexa.c"
 
 int	ft_get_format(const char *s, size_t i, va_list args)
 {
@@ -31,10 +32,10 @@ int	ft_get_format(const char *s, size_t i, va_list args)
 		length += ft_decimal(va_arg(args, int));
 	else if (s[i] == 'u')
 		length += ft_unsigned(va_arg(args, unsigned int));
-	/*else if (s[i] == 'x')
-		length += ft_hexa_low(va_arg(args, unsigned int));*/
-	/*else if (s[i] == 'X')
-		length += ft_hexa_up(va_arg(args, unsigned int));*/
+	else if (s[i] == 'x')
+		length += ft_hexa_low(va_arg(args, unsigned int));
+	else if (s[i] == 'X')
+		length += ft_hexa_up(va_arg(args, unsigned int));
 	else if (s[i] == '%')
 	{
 		length++;

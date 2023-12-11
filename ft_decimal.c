@@ -6,13 +6,12 @@
 /*   By: chhoflac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/09 10:20:32 by chhoflac          #+#    #+#             */
-/*   Updated: 2023/12/09 13:06:23 by chhoflac         ###   ########.fr       */
+/*   Updated: 2023/12/11 12:02:15 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 #include "ft_putnbr_fd.c"
-#include "ft_getsize.c"
  
 int	ft_decimal(int n)
 {
