@@ -6,13 +6,13 @@
 /*   By: chhoflac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/08 16:51:05 by chhoflac          #+#    #+#             */
-/*   Updated: 2023/12/12 16:49:43 by chhoflac         ###   ########.fr       */
+/*   Updated: 2023/12/12 17:37:43 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
-int ft_getusize2(unsigned int n)
+int	ft_getusize2(unsigned int n)
 {
 	int	i;
 

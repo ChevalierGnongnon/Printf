@@ -6,16 +6,11 @@
 /*   By: chhoflac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/08 14:16:51 by chhoflac          #+#    #+#             */
-/*   Updated: 2023/12/12 17:09:38 by chhoflac         ###   ########.fr       */
+/*   Updated: 2023/12/12 17:39:35 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include "ft_char.c"
-#include "ft_string.c"
-#include "ft_decimal.c"
-#include "ft_unsigned.c"
-#include "ft_hexa.c"
 
 int	ft_get_format(const char *s, size_t i, va_list args)
 {

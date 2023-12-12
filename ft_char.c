@@ -6,12 +6,11 @@
 /*   By: chhoflac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/08 14:47:59 by chhoflac          #+#    #+#             */
-/*   Updated: 2023/12/09 12:07:44 by chhoflac         ###   ########.fr       */
+/*   Updated: 2023/12/12 17:37:16 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
-#include "ft_putchar_fd.c"
 
 int	ft_char(char c)
 {
