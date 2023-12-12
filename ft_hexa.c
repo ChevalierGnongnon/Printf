@@ -6,7 +6,7 @@
 /*   By: chhoflac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/08 16:51:05 by chhoflac          #+#    #+#             */
-/*   Updated: 2023/12/11 14:54:36 by chhoflac         ###   ########.fr       */
+/*   Updated: 2023/12/12 10:49:06 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,8 +15,8 @@
 
 int	ft_hexa_up(unsigned int n)
 {
-	unsigned int rem;
-	int i;
+	unsigned int	rem;
+	int				i;
 
 	i = 0;
 	rem = n % 16;
@@ -35,8 +35,8 @@ int	ft_hexa_up(unsigned int n)
 
 int	ft_hexa_low(unsigned int n)
 {
-	unsigned int rem;
-	int i;
+	unsigned int	rem;
+	int				i;
 
 	i = 0;
 	rem = n % 16;
