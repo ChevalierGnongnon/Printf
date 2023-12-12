@@ -40,8 +40,8 @@ clean :
 fclean : clean
 	$(RM) $(NAME)
 
-try : 
-	$(CC) $(CFLAGS) $(MAIN)
+try : $(NAME)
+	$(CC) $(CFLAGS) $(MAIN) $(NAME)
 	$(OUT)
 
 re : fclean all
