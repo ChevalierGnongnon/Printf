@@ -6,7 +6,7 @@
 /*   By: chhoflac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/08 13:31:01 by chhoflac          #+#    #+#             */
-/*   Updated: 2023/12/12 17:10:19 by chhoflac         ###   ########.fr       */
+/*   Updated: 2023/12/14 10:26:46 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 # define FT_PRINTF_H
 
 # include <stdarg.h>
-# include <stdio.h>
 # include <unistd.h>
 # include <stddef.h>
 

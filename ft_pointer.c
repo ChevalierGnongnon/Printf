@@ -6,7 +6,7 @@
 /*   By: chhoflac <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2023/12/08 16:48:10 by chhoflac          #+#    #+#             */
-/*   Updated: 2023/12/12 17:22:03 by chhoflac         ###   ########.fr       */
+/*   Updated: 2023/12/14 10:21:21 by chhoflac         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,8 +45,8 @@ int	ft_pointer(unsigned long long add)
 {
 	if (add == 0)
 	{
-		write(1, "(nil)", 5);
-		return (5);
+		write(1, "0x0", 3);
+		return (3);
 	}
 	write(1, "0x", 2);
 	return (ft_hexa_add(add) + 2);

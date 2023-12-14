@@ -1,3 +1,5 @@
+NAME = libftprintf.a
+
 SRCS = ft_char.c \
 	ft_decimal.c \
 	ft_hexa.c \
@@ -13,15 +15,9 @@ SRCS = ft_char.c \
 
 OBJS = $(SRCS:.c=.o)
 
-NAME = libftprintf.a
-
 RM = rm -f
 
 CC = gcc
-
-MAIN = main.c
-
-OUT = ./a.out
 
 CFLAGS = -Werror -Wextra -Wall
 
@@ -38,10 +34,6 @@ clean :
 
 fclean : clean
 	$(RM) $(NAME)
-
-try : $(NAME)
-	$(CC) $(CFLAGS) $(MAIN) $(NAME)
-	$(OUT)
 
 re : fclean all
 
